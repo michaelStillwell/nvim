@@ -41,8 +41,16 @@ return require('packer').startup(function(use)
 		  {'hrsh7th/cmp-nvim-lua'},
 
 		  -- Snippets
-		  {'L3MONL3M0N4D3/LuaSnip4D3/LuaSnip'},
-		  {'rafamadriz/friendly-snippets'},
+          {'L3MON4D3/LuaSnip'},
+          {'rafamadriz/friendly-snippets'},
 	  }
+  }
+
+  use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+          'nvim-tree/nvim-web-devicons',
+      },
+      tag = 'nightly'
   }
 end)
